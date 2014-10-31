@@ -1,7 +1,7 @@
 nmcssh
 ======
 
-nmcssh aims to solve [Zooko's triangle](1) for ssh authentication.
+nmcssh aims to solve [Zooko's triangle][1] for ssh authentication.
 
 - decentralized: all keys are stored in the namecoin block
 - secure: the system relies on namecoin's security
