@@ -7,6 +7,7 @@ import os
 
 PREFIX = 'ssh'
 
+
 def get_rpc_string(path):
     with open(path) as f:
         conf_str = f.read()
@@ -17,7 +18,8 @@ def get_rpc_string(path):
         key, value = x.split('=')
         config[key] = value
 
-    return 'http://%s:%s@127.0.0.1:%s' % (config['rpcuser'], config['rpcpassword'], config['rpcport'])
+    args = (config['rpcuser'], config['rpcpassword'], config['rpcport'])
+    return 'http://%s:%s@127.0.0.1:%s' % args
 
 
 def main():
